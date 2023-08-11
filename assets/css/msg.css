@@ -1,0 +1,30 @@
+
+/* Style for error and success messages */
+.message {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f44336; /* Red for error messages */
+    color: white;
+    border-radius: 5px;
+    animation: messageAnimation 3s ease-out;
+}
+
+.message.success {
+    background-color: #4CAF50; /* Green for success messages */
+}
+
+/* Keyframes for message animation */
+@keyframes messageAnimation {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    20% {
+        top: 3%;
+        opacity: 1;
+    }
+}
+
